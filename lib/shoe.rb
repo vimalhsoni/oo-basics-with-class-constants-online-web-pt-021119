@@ -7,9 +7,10 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
+    BRANDS = Array.uniq
   end
 
-BRANDS = Array.uniq
+
 
   def cobble
     self.condition = "new"
